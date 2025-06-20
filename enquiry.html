@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- main section -->
+
+    <div id="main" style="background-image: url(https://images.pexels.com/photos/6515042/pexels-photo-6515042.jpeg);">
+        <div class="content">
+            <div class="navi">
+                <div class="logo">
+                    <a href="home.html">Ceylon <span>travels</span></a>
+                </div>
+                <div class="navbar">
+                    <a href="index.html">HOME</a>
+                    <a href="aboutus.html">ABOUT US</a>
+                    <a href="packages.html">PACKAGES</a>
+                    <a href="destinations.html">DESTINATIONS</a>
+                    <a href="enquiry.html">ENQUIRY</a>
+                </div>
+            </div>
+            <div class="bodyContent"> 
+                <div class="bcbox">
+                    <h1>We’re Here to <br>Help You Travel Better!</h1>
+                    <p>
+                        Where Every Journey Begins with a Story
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+
+
+    <!-- 1st section -->
+
+    <div class="enquiry">
+        <h2>Enquire About Your Dream Trip</h2><br>
+        <p>Fill in the form below and we’ll get back to you shortly.</p>
+        <br><br><br>
+
+        <div class="form">
+            
+            <div class="form-img">
+                <img src="https://images.pexels.com/photos/1658967/pexels-photo-1658967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            </div>
+
+            <div class="form-content">
+                <form action="backend.php" method="get">
+
+                    <label>Full Name</label>
+                    <input type="text" id="name" required>
+                    
+                    <label>Email Address</label>
+                    <input type="email" id="email" required>
+                    
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" required>
+                    
+                    <label>Preferred Package</label>
+                    <select id="package">
+                        <option value="adventure">Beach Bliss Package</option>
+                        <option value="cultural">Wildlife & Nature Adventure</option>
+                        <option value="beach">Hill Country Escape</option>
+                        <option value="wildlife">Wellness & Ayurveda Retreat</option>
+                        <option value="wildlife">Cultural Heritage Tour</option>
+                        <option value="wildlife">Custom Packages</option>
+                    </select>
+                    
+                    <label>Message or Special Requests</label>
+                    <textarea id="message" rows="5"></textarea>
+                    
+                    <button onclick="window.alert('Submit Successfully')">Submit Enquiry</button>
+                    
+        
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <p>All Rights Reserved ©</p>
+    </footer>
+
+</body>
+</html>
